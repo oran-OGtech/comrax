@@ -1,0 +1,11 @@
+<div *ngFor="let genre of movies.genres$ | async">
+  <h2 class="genre">{{genre.name}}</h2>
+  <div class="movies">
+    <a *ngFor="let movie of genre.movies" [routerLink]="[movie.id]" [queryParams]="movie">
+      <img [alt]="movie.title" [src]="movie.poster">
+    </a>
+  </div>
+</div>
+<div *ngIf="movies.notFound$ | async" class="not-found">
+  Not found
+</div>

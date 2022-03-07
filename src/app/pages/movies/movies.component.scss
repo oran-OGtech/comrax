@@ -1,0 +1,16 @@
+:host {
+  display: block;
+  padding: var(--indent-m);
+}
+
+.movies {
+  display: flex;
+  column-gap: var(--indent-m);
+  overflow-x: auto;
+}
+
+.not-found {
+  font-size: 50px;
+  text-align: center;
+  color: red;
+}

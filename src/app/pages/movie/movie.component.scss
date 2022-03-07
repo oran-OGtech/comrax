@@ -1,0 +1,21 @@
+:host {
+  display: flex;
+  padding: var(--indent-m);
+  max-width: 1000px;
+  margin: 0 auto;
+  column-gap: var(--indent-m);
+  font-size: 20px;
+}
+
+.small-characteristic {
+  font-weight: 700;
+}
+
+.characteristic-line {
+  margin-top: var(--indent-m);
+}
+
+header {
+  display: flex;
+  align-items: center;
+}

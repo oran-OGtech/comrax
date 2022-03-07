@@ -1,0 +1,14 @@
+<ng-container *ngIf="movie$ | async as movie">
+  <img [src]="movie.poster" id="poster">
+  <div class="info">
+    <header>
+      <h1><span id="title">{{movie.title}}</span>
+        <span id="rating">({{movie.imdb_rating}})</span>
+      </h1>
+    </header>
+    <div id="length-and-director" class="characteristic-line small-characteristic">{{movie.length}}
+      | {{movie.director}}</div>
+    <div id="cast" class="characteristic-line small-characteristic">Cast: {{movie.cast | join:', '}}</div>
+    <div id="overview" class="characteristic-line" [innerHTML]="movie.overview"></div>
+  </div>
+</ng-container>

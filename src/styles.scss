@@ -1,0 +1,13 @@
+@import "normalize.css";
+
+button, input {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+:root {
+  --indent-m: 20px;
+}

@@ -1,0 +1,32 @@
+:host {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #000;
+  padding: var(--indent-m)
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+
+form {
+  display: flex;
+  align-self: flex-end;
+  align-items: center;
+
+  button {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    transform: rotateY(180deg);
+  }
+
+  input {
+    min-height: 32px;
+    min-width: 250px;
+  }
+}
